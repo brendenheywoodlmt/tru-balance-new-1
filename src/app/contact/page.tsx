@@ -63,8 +63,13 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-bold text-stone-900 text-lg">Email</h4>
                   <p className="text-stone-600">brenden.heywood.lmt@gmail.com</p>
-                  <h4 className="font-bold text-stone-900 text-lg mt-6">Phone</h4>
-                  <p className="text-stone-600">(385)203-8749</p>
+                </div>
+                <div className="w-12 h-12 bg-[#2c2f62] rounded-2xl flex items-center justify-center ml-4 shrink-0 text-white shadow-sm">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-stone-900 text-lg">Phone</h4>
+                  <p className="text-stone-600">(385) 203-8749</p>
                 </div>
               </div>
             </div>
