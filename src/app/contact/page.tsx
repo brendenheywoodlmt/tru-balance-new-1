@@ -93,7 +93,7 @@ export default function ContactPage() {
           </div>
 
           {/* BOTTOM LEFT: Booking Portal */}
-          <div className="bg-[#2c2f62] p-8 md:p-10 rounded-3xl border border-[#2c2f62] flex flex-col justify-between shadow-lg">
+          <div className="bg-[#2c2f62] p-8 mr-4 md:p-10 rounded-3xl border border-[#2c2f62] flex flex-col justify-between shadow-lg mx-auto max-w-xl">
             <div>
               <h3 className="text-2xl font-sans text-white mb-4">Ready to book?</h3>
               <p className="text-white mb-8 leading-relaxed">
@@ -140,7 +140,7 @@ export default function ContactPage() {
       </section>
 
       {/* Parking & Transit Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+      <div className="px-100 gap-8 mt-12 mb-20">
         
         {/* Parking Information Card */}
         <div className="p-8 bg-stone-50 rounded-3xl border border-stone-200 shadow-sm transition-all hover:border-[#2c2f62] py-6">
@@ -168,39 +168,6 @@ export default function ContactPage() {
             </li>
           </ul>
         </div>
-
-        {/* Public Transportation Card */}
-        <div className="p-8 bg-stone-50 rounded-3xl border border-stone-200 shadow-sm transition-all hover:border-[#2c2f62] py-6">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 bg-[#2c2f62] rounded-xl flex items-center justify-center text-white">
-              <Clock size={20} />
-            </div>
-            <h3 className="text-2xl font-sans text-[#2c2f62]">Public Transportation</h3>
-          </div>
-          
-          <div className="space-y-6">
-            <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest text-[#2c2f62] mb-2">Frontrunner</h4>
-              <p className="text-stone-700 text-sm leading-relaxed">
-                Provo Central Station (Bay B) — <span className="font-semibold text-stone-900">1 min walk</span>
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest text-[#2c2f62] mb-2">Bus Route 850</h4>
-              <p className="text-stone-700 text-sm leading-relaxed">
-                Lehi Station, 31 stops to State St / Center St (NB) — <span className="font-semibold text-stone-900">13 min walk</span>
-              </p>
-            </div>
-
-            <div className="pt-4 border-t border-stone-200">
-              <p className="text-xs italic text-stone-500">
-                * Use entrance on the north west side of the building
-              </p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   );
