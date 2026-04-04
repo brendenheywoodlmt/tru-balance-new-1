@@ -64,7 +64,9 @@ export default function ContactPage() {
                   <h4 className="font-bold text-stone-900 text-lg">Email</h4>
                   <p className="text-stone-600">brenden.heywood.lmt@gmail.com</p>
                 </div>
-                <div className="w-12 h-12 bg-[#2c2f62] rounded-2xl flex items-center justify-center ml-4 shrink-0 text-white shadow-sm">
+              </div>
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-[#2c2f62] rounded-2xl flex items-center justify-center mr-4 shrink-0 text-white shadow-sm">
                   <Phone size={24} />
                 </div>
                 <div>
