@@ -2,6 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, BookOpen, Heart, Leaf, Sparkles } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Wellness Resources & Articles | Tru Balance",
+  description: "Expert health and wellness articles, tips, and guides to help you achieve optimal balance and transformation.",
+};
 
 export default function ResourcesPage() {
   return (

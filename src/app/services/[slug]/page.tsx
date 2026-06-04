@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Clock, Tag, ChevronLeft, Sparkles, ShieldCheck, Zap } from 'lucide-react';
+import type { Metadata } from 'next';
 
 const serviceData = {
   'therapeutic-massage': {
@@ -27,6 +28,22 @@ const serviceData = {
     price: "$95"
   }
 };
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const service = serviceData[slug as keyof typeof serviceData];
+  
+  if (!service) {
+    return {
+      title: "Service Not Found | Tru Balance",
+    };
+  }
+
+  return {
+    title: `${service.title} | Tru Balance`,
+    description: service.description,
+  };
+}
 
 export default async function ServiceArticle({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

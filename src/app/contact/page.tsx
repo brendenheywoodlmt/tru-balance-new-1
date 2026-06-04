@@ -1,5 +1,11 @@
 import { Mail, Phone, MapPin, Clock, ExternalLink, Sparkles } from 'lucide-react';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Contact Tru Balance | Book Massage & Reiki Services",
+  description: "Get in touch with Tru Balance. Find our clinic location, hours, and booking information. Schedule your healing appointment today.",
+};
 
 export default function ContactPage() {
   return (

@@ -1,6 +1,12 @@
 import { CheckCircle2, Heart, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About Tru Balance | Our Healing Philosophy & Approach",
+  description: "Learn about Tru Balance's trauma-informed approach to healing. Discover our philosophy on wellness, balance, and holistic transformation.",
+};
 
 export default function AboutPage() {
   return (

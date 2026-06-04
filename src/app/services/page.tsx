@@ -1,6 +1,12 @@
 import { SERVICES } from '@/constants/services';
 import { Clock, Tag, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Healing Services | Tru Balance Massage & Reiki",
+  description: "Explore our range of healing services including therapeutic massage, reiki, deep tissue therapy, and more. Find the perfect treatment for your wellness journey.",
+};
 
 export default function ServicesPage() {
   return (
