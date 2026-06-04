@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 import "@/app/globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import LocalBusinessSchema from '@/components/LocalBusinessSchema';
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: "400", // Regular weight
+  variable: "--font-montserrat",
+  display: "swap",
+});
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://trubalance.life";
 
 export const metadata: Metadata = {
-  title: "Tru Balance | Massage Therapy & Reiki in Utah",
+  title: {
+    default: "Tru Balance | Massage Therapy & Reiki in Utah",
+    template: "%s | Tru Balance",
+  },
   description: "Experience transformative healing through compassionate, trauma-informed massage therapy and reiki in Utah. Find balance for your body and spirit.",
   keywords: "Sports Massage Orem, Massage for Runners Orem, Running Recovery Massage, Marathon Recovery Massage, Trigger Point Therapy Orem, Myofascial Release Orem, Reiki Orem Utah, Therapeutic Massage Orem, Customized Massage Orem, Recovery Massage Orem",
   metadataBase: new URL(siteUrl),
@@ -40,16 +52,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <head>
+      </head>
+      <body className={`${montserrat.variable} font-sans`}>
+        <LocalBusinessSchema />
         <Navbar />
-        {children}
+        <main className="min-h-screen">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
