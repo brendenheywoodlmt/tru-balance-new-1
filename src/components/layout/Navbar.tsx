@@ -15,6 +15,13 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-[#2c2f62] backdrop-blur-md border-b border-white/10">
+      {/* --- ADDED: Scrolling Yellow Announcement Banner --- */}
+      <div className="w-full bg-[#d6ac4f] text-center font-bold overflow-hidden py-1">
+        <div className="whitespace-wrap text-black text-xs tracking-wide">
+          TruBalance will be moving to Jamestown Square soon! Stay tuned for an exact date!
+        </div>
+      </div>
+      
       <div className="max-w-6xl mx-auto px-6 h-32 flex justify-between items-center">
         {/* Logo Section */}
         <Link href="/" onClick={closeMenu} className="shrink-0">
