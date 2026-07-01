@@ -258,9 +258,9 @@ export default function Home() {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#4e8d58] mb-2">Location</h3>
                 <p className="text-lg text-stone-800 leading-tight">
-                  388 W Center St<br />
-                  Orem, UT 84057<br />
-                  <span className="text-stone-500 text-sm font-normal italic">(Inside Etherios Therapy)</span>
+                  Jamestown Square<br />
+                  3355 North University Ave., Suite 175<br />
+                  Provo, UT 84604<br />
                 </p>
               </div>
 
