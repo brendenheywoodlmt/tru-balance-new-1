@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Sparkles, MapPin } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import MovingAnnouncement from '@/components/MovingCard';
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
         </Link>
         </div>
       </main>
+
+    <MovingAnnouncement />
 
     <div className="bg-white px-6 py-16 text-center">
       <h2 className="text-4xl font-sans text-stone-800 mt-6 sm:mt-0">

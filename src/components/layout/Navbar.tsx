@@ -18,7 +18,7 @@ export default function Navbar() {
       {/* --- ADDED: Scrolling Yellow Announcement Banner --- */}
       <div className="w-full bg-[#d6ac4f] text-center font-bold overflow-hidden py-1">
         <div className="whitespace-wrap text-black text-xs tracking-wide">
-          TruBalance will be moving to Jamestown Square in Provo soon! Stay tuned for an exact date!
+          TruBalance will be moving to Jamestown Square in Provo July 10th, 2026! Please see our new location details and book your appointments accordingly.
         </div>
       </div>
       

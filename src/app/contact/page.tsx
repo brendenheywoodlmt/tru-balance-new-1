@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin, Clock, ExternalLink, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import MovingNoticeCard from '@/components/MovingNoticeCard';
 
 export const metadata: Metadata = {
   title: "Contact Tru Balance | Book Massage & Reiki Services",
@@ -24,6 +25,8 @@ export default function ContactPage() {
         </div>
       </section>
 
+      <MovingNoticeCard />
+
       {/* Main Grid Section */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -39,8 +42,10 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-stone-900 text-lg">Location</h4>
-                  <p className="text-stone-600">388 W Center St, Orem, UT 84057</p>
-                  <p className="text-stone-500 italic text-sm">Inside Etherios Therapy — By Appointment Only</p>
+                  <p className="text-stone-600">Jamestown Square</p>
+                  <p className="text-stone-600">3355 North University Ave., Suite 175</p>
+                  <p className="text-stone-600">Provo, Utah 84604</p>
+                  <p className="text-stone-500 italic text-sm">By Appointment Only</p>
                 </div>
               </div>
 
@@ -86,7 +91,7 @@ export default function ContactPage() {
           {/* TOP RIGHT: Google Maps Embed */}
           <div className="bg-stone-50 rounded-3xl border border-stone-200 shadow-sm overflow-hidden h-full min-h-[450px]">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.570125637254!2d-111.70187832344073!3d40.29641777142013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d90ce364379e7%3A0xc3f982741548e65e!2s388%20W%20Center%20St%2C%20Orem%2C%20UT%2084057!5e0!3m2!1sen!2sus!4v1710500000000!5m2!1sen!2sus" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.8386806860085!2d-111.6590489!3d40.2793336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d907c09430413%3A0xb691ffa7ddee5518!2s3355%20N%20University%20Ave%20%23175%2C%20Provo%2C%20UT%2084604!5e0!3m2!1sen!2sus!4v1782751607282!5m2!1sen!2sus"
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -161,12 +166,6 @@ export default function ContactPage() {
             <li className="flex items-start gap-3">
               <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#4e8d58] shrink-0" />
               <p className="text-[#2c2f62] font-medium">Free parking available</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#4e8d58] shrink-0" />
-              <p className="text-stone-600">
-                Park near <span className="text-[#2c2f62] font-semibold">Etherios Therapy entrance</span> (north west)
-              </p>
             </li>
             <li className="flex items-start gap-3">
               <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#4e8d58] shrink-0" />
