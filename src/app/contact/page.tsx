@@ -20,7 +20,7 @@ export default function ContactPage() {
           </div>
           <h1 className="text-5xl md:text-7xl font-sans mb-6 text-stone-900">Clinic Information</h1>
           <p className="text-xl text-stone-600">
-          We're conveniently located on center street with easy access to parking and public transportation.
+          We're conveniently located with easy access to parking and public transportation.
           </p>
         </div>
       </section>
