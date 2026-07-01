@@ -36,9 +36,7 @@ export default function MovingAnnouncement() {
           </p>
 
           <Link 
-            href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/contact"
             className="inline-block bg-[#4e8d58] text-white px-10 py-4 rounded-full font-bold hover:bg-stone-900 transition-all shadow-lg"
           >
             See New Clinic Details

@@ -58,7 +58,7 @@ export default function ContactPage() {
                   <div className="grid grid-cols-2 gap-y-1 text-sm text-stone-600">
                     <span>Monday</span><span className="text-right font-medium">10:30 AM – 5:00 PM</span>
                     <span className="opacity-40">Tuesday</span><span className="text-right opacity-40">Closed</span>
-                    <span>Wednesday</span><span className="text-right font-medium">1:00 PM – 7:00 PM</span>
+                    <span className="opacity-40">Wednesday</span><span className="text-right opacity-40">Closed</span>
                     <span>Thursday</span><span className="text-right font-medium">11:30 AM – 6:00 PM</span>
                     <span className="opacity-40">Friday</span><span className="text-right opacity-40">Closed</span>
                     <span>Saturday</span><span className="text-right font-medium">8:00 AM – 2:30 PM</span>
