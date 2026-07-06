@@ -9,11 +9,11 @@ export default function MovingAnnouncement() {
         <div className="bg-white p-10 md:p-16 rounded-3xl border border-stone-200 shadow-xl text-center">
           
           <h2 className="text-4xl md:text-5xl font-sans font-bold text-stone-900 mb-8">
-            I’m Moving to Provo
+            I Moved to Provo
           </h2>
           
           <p className="text-lg text-stone-600 leading-relaxed mb-8">
-            TruBalance Massage is entering a new chapter. Beginning July 10th, 2026, all
+            TruBalance Massage is entering a new chapter. As of July 6th, 2026, all
             appointments will take place at our new location inside Jamestown Square in Provo.
           </p>
 

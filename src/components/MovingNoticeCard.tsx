@@ -7,12 +7,12 @@ export default function MovingNoticeCard() {
       <div className="bg-[#d6ac4f] p-8 rounded-3xl border border-stone-200 shadow-lg">
         
         <h2 className="text-3xl font-sans font-bold text-stone-900 mb-6 text-center">
-          New Location Beginning July 10th, 2026
+          New Location As of July 6th, 2026
         </h2>
         
-        <p className="text-stone-800 leading-relaxed mb-6">
-          TruBalance Massage is moving to a new professional space in Provo. 
-          Beginning <strong>July 10th, 2026</strong>, all appointments will be held at:
+        <p className="text-stone-800 leading-relaxed mb-6 text-center">
+          TruBalance Massage has moved to a new professional space in Provo. 
+          As of <strong>July 6th, 2026</strong>, all appointments will be held at:
         </p>
 
         {/* Address Box */}
@@ -27,16 +27,10 @@ export default function MovingNoticeCard() {
           </p>
         </div>
 
-        <p className="text-stone-800 leading-relaxed mb-4">
-          Please use the new address for appointments scheduled on or after <strong>July 10th, 2026</strong>.
+        <p className="text-stone-800 leading-relaxed mb-4 text-center">
+          Please use the new address for appointments scheduled on or after <strong>July 6th, 2026</strong>.
           If you have any questions before your visit, feel free to reach out.
         </p>
-
-        <div className="mt-6 pt-6 border-t border-[#4e8d58]/30">
-          <p className="text-sm text-stone-700 italic">
-            <strong>Note:</strong> Appointments before July 10th, 2026 will continue at the current Orem location unless otherwise arranged.
-          </p>
-        </div>
         
       </div>
     </div>
