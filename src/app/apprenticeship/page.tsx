@@ -135,14 +135,14 @@ export default function MassageApprenticesPage() {
       <section className="w-full bg-[#d6ac4f] py-16 px-4 shadow-sm text-center space-y-8">
         <div className="max-w-5xl mx-auto space-y-8">
           <div>
-            <Link 
+            <a 
               href={process.env.NEXT_PUBLIC_BOOKING_URL || '#'}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#2c2f62] text-white font-semibold px-8 py-3 rounded-md shadow hover:bg-[#2c2f62]/90 transition-colors"
             >
               Book Appointment via AlignedWest
-            </Link>
+            </a>
           </div>
 
           <footer className="pt-6 border-t border-[#c2983e]/60">
