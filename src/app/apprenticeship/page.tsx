@@ -136,7 +136,7 @@ export default function MassageApprenticesPage() {
         <div className="max-w-5xl mx-auto space-y-8">
           <div>
             <Link 
-              href={process.env.BOOKING_URL || '#'}
+              href={process.env.NEXT_PUBLIC_BOOKING_URL || '#'}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#2c2f62] text-white font-semibold px-8 py-3 rounded-md shadow hover:bg-[#2c2f62]/90 transition-colors"
