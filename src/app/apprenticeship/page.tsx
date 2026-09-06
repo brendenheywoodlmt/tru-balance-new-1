@@ -135,6 +135,7 @@ export default function MassageApprenticesPage() {
       <section className="w-full bg-[#d6ac4f] py-16 px-4 shadow-sm text-center space-y-8">
         <div className="max-w-5xl mx-auto space-y-8">
           <div>
+            {/*ERMALERD! */}
             <a 
               href={process.env.NEXT_PUBLIC_BOOKING_URL || '#'}
               target="_blank"
