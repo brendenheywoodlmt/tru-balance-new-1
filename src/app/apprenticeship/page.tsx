@@ -33,7 +33,7 @@ export default function MassageApprenticesPage() {
                 src="/images/apprenticeheadshot1.jpeg" 
                 alt="Apprentice One" 
                 fill 
-                className="object-cover"
+                className="object-cover object-[50%_25%]"
               />
             </div>
             <div className="md:col-span-2 space-y-2">
