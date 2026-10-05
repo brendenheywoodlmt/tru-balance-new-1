@@ -30,8 +30,6 @@ export default function Home() {
         </div>
       </main>
 
-    <MovingAnnouncement />
-
     <div className="bg-white px-6 py-16 text-center">
       <h2 className="text-4xl font-sans text-stone-800 mt-6 sm:mt-0">
         Healing <span className="text-[#4e8d58]">Modalities</span>
@@ -268,13 +266,13 @@ export default function Home() {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#4e8d58] mb-4">Hours</h3>
                 <ul className="space-y-2 text-stone-700">
-                  <li className="flex justify-between border-b border-stone-200 pb-1"><span>Monday</span> <span className="font-medium">10:30 AM - 5:00 PM</span></li>
+                  <li className="flex justify-between border-b border-stone-200 pb-1"><span>Monday</span> <span className="font-medium">10:30 AM - 5:30 PM</span></li>
                   <li className="flex justify-between border-b border-stone-200 pb-1 text-stone-400"><span>Tuesday</span> <span>Closed</span></li>
-                  <li className="flex justify-between border-b border-stone-200 pb-1"><span>Wednesday</span> <span className="font-medium">1:00 PM - 7:00 PM</span></li>
-                  <li className="flex justify-between border-b border-stone-200 pb-1"><span>Thursday</span> <span className="font-medium">11:30 AM - 6:00 PM</span></li>
-                  <li className="flex justify-between border-b border-stone-200 pb-1 text-stone-400"><span>Friday</span> <span>Closed</span></li>
-                  <li className="flex justify-between border-b border-stone-200 pb-1"><span>Saturday</span> <span className="font-medium">8:00 AM - 2:30 PM</span></li>
-                  <li className="flex justify-between"><span>Sunday</span> <span className="font-medium">9:00 AM - 3:30 PM</span></li>
+                  <li className="flex justify-between border-b border-stone-200 pb-1 text-stone-400"><span>Wednesday</span> <span>Closed</span></li>
+                  <li className="flex justify-between border-b border-stone-200 pb-1"><span>Thursday</span> <span className="font-medium">11:00 AM - 6:00 PM</span></li>
+                  <li className="flex justify-between border-b border-stone-200 pb-1"><span>Friday</span> <span className="font-medium">4:00 PM - 8:00 PM</span></li>
+                  <li className="flex justify-between border-b border-stone-200 pb-1"><span>Saturday</span> <span className="font-medium">8:00 AM - 3:00 PM</span></li>
+                  <li className="flex justify-between border-b border-stone-200 pb-1"><span>Sunday</span> <span className="font-medium">9:00 AM - 4:00 PM</span></li>
                 </ul>
               </div>
 

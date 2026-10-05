@@ -30,7 +30,7 @@ export default function MassageApprenticesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center bg-white/95 backdrop-blur-sm p-6 rounded-lg border border-stone-200 shadow-sm">
             <div className="relative w-full h-64 md:h-72 rounded-md overflow-hidden bg-stone-100">
               <Image 
-                src="/images/apprenticeheadshot1.png" 
+                src="/images/apprenticeheadshot1.jpeg" 
                 alt="Apprentice One" 
                 fill 
                 className="object-cover"

@@ -16,7 +16,7 @@ export default function Navbar() {
       {/* Scrolling Yellow Announcement Banner */}
       <div className="w-full bg-[#d6ac4f] text-center font-bold overflow-hidden py-1">
         <div className="whitespace-wrap text-black text-xs tracking-wide">
-          TruBalance has moved to Jamestown Square in Provo as of July 6th, 2026! Please see our new location details and book your appointments accordingly.
+          TruBalance prices for 60min, 90min, and 120min sessions will change on 11/01/2026. 60 min = $100, 90 min = $150, and 2hr = $200. Thanks!
         </div>
       </div>
       

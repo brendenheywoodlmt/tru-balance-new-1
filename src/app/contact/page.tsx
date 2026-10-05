@@ -25,8 +25,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <MovingNoticeCard />
-
       {/* Main Grid Section */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -56,13 +54,13 @@ export default function ContactPage() {
                 <div className="w-full max-w-sm">
                   <h4 className="font-bold text-stone-900 text-lg mb-2">Availability</h4>
                   <div className="grid grid-cols-2 gap-y-1 text-sm text-stone-600">
-                    <span>Monday</span><span className="text-right font-medium">10:30 AM – 5:00 PM</span>
+                    <span>Monday</span><span className="text-right font-medium">10:30 AM – 5:30 PM</span>
                     <span className="opacity-40">Tuesday</span><span className="text-right opacity-40">Closed</span>
                     <span className="opacity-40">Wednesday</span><span className="text-right opacity-40">Closed</span>
-                    <span>Thursday</span><span className="text-right font-medium">11:30 AM – 6:00 PM</span>
-                    <span className="opacity-40">Friday</span><span className="text-right opacity-40">Closed</span>
-                    <span>Saturday</span><span className="text-right font-medium">8:00 AM – 2:30 PM</span>
-                    <span>Sunday</span><span className="text-right font-medium">9:00 AM – 3:30 PM</span>
+                    <span>Thursday</span><span className="text-right font-medium">11:00 AM – 6:00 PM</span>
+                    <span>Friday</span><span className="text-right font-medium">4:00 PM - 8:00 PM</span>
+                    <span>Saturday</span><span className="text-right font-medium">8:00 AM – 3:00 PM</span>
+                    <span>Sunday</span><span className="text-right font-medium">9:00 AM – 4:00 PM</span>
                   </div>
                 </div>
               </div>
