@@ -1,39 +1,36 @@
 import Link from 'next/link';
-import { Clock, Tag, ChevronLeft, Sparkles, ShieldCheck, Zap } from 'lucide-react';
+import { Clock, Tag, ChevronLeft, ShieldCheck } from 'lucide-react';
 import type { Metadata } from 'next';
+import { SERVICES } from '@/constants/services';
 
-const serviceData = {
+const serviceDetails: Record<string, {
+  description: string;
+  content: string;
+  benefits: string[];
+}> = {
   'therapeutic-massage': {
-    title: "Therapeutic Massage",
     description: "A specialized blend of Deep Tissue and Swedish techniques designed to address the root causes of physical discomfort.",
     content: "Our Therapeutic Massage isn't just about relaxation—it's about restoration. By combining the long, flowing strokes of Swedish massage with the targeted, intense pressure of Deep Tissue work, we break down adhesions (knots) in the muscle fibers. This process increases blood flow to oxygen-starved tissues and flushes out metabolic waste, providing lasting relief from chronic tension.",
     benefits: ["Relieves chronic muscle pain", "Lowered blood pressure", "Improved joint mobility"],
-    duration: "30 min / 60 min / 90 min / 120 min",
-    price: "$50 - $185"
   },
   'reiki-energy-work': {
-    title: "Reiki Energy Work",
     description: "A Japanese technique for stress reduction and relaxation that also promotes healing.",
     content: "Reiki is based on the idea that an unseen 'life force energy' flows through us. During a session, the practitioner acts as a conduit for this energy, helping to clear blockages in the body's natural energetic field. It is a deeply peaceful, non-invasive experience that helps quiet the nervous system and fosters a state of spiritual and emotional balance.",
     benefits: ["Deep relaxation", "Stress and anxiety reduction", "Enhanced mental clarity"],
-    duration: "30 min / 60 min",
-    price: "$50 - $95"
   },
   'sports-massage': {
-    title: "Sports Massage",
     description: "Targeted therapy for athletes and active individuals to enhance performance and recovery.",
     content: "Our Sports Massage is tailored for those who lead an active lifestyle. We focus on the specific muscles and areas that are most prone to tension and fatigue. This targeted approach helps improve flexibility, reduce the risk of injury, and support faster recovery after intense physical activity.",
     benefits: ["Improved athletic performance", "Faster recovery", "Injury prevention"],
-    duration: "30 min / 60 min / 90 min",
-    price: "$50 - $125"
   }
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const service = serviceData[slug as keyof typeof serviceData];
+  const service = SERVICES.find((item) => item.slug === slug);
+  const details = serviceDetails[slug];
   
-  if (!service) {
+  if (!service || !details) {
     return {
       title: "Service Not Found | Tru Balance",
     };
@@ -41,15 +38,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   return {
     title: `${service.title} | Tru Balance`,
-    description: service.description,
+    description: details.description,
   };
 }
 
 export default async function ServiceArticle({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const service = serviceData[slug as keyof typeof serviceData];
+  const service = SERVICES.find((item) => item.slug === slug);
+  const details = serviceDetails[slug];
 
-  if (!service) return <div className="py-20 text-center">Service not found.</div>;
+  if (!service || !details) return <div className="py-20 text-center">Service not found.</div>;
 
   return (
     <div className="bg-white min-h-screen">
@@ -68,7 +66,7 @@ export default async function ServiceArticle({ params }: { params: Promise<{ slu
             Professional Care
           </div>
           <h1 className="text-5xl md:text-7xl font-sans text-stone-900 mb-6">{service.title}</h1>
-          <p className="text-xl text-stone-600 leading-relaxed italic">{service.description}</p>
+          <p className="text-xl text-stone-600 leading-relaxed italic">{details.description}</p>
         </header>
 
         {/* Pricing/Time Quick Stats */}
@@ -88,7 +86,7 @@ export default async function ServiceArticle({ params }: { params: Promise<{ slu
           <div className="md:col-span-2">
             <h2 className="text-2xl font-sans text-stone-900 mb-4 text-[#2c2f62]">About the Session</h2>
             <p className="text-stone-600 leading-relaxed text-lg mb-8">
-              {service.content}
+              {details.content}
             </p>
           </div>
 
@@ -98,7 +96,7 @@ export default async function ServiceArticle({ params }: { params: Promise<{ slu
               Key Benefits
             </h3>
             <ul className="space-y-3">
-              {service.benefits.map((benefit) => (
+              {details.benefits.map((benefit) => (
                 <li key={benefit} className="text-sm text-stone-600 flex gap-2">
                   <span className="text-[#4e8d58]">•</span> {benefit}
                 </li>
@@ -124,5 +122,4 @@ export default async function ServiceArticle({ params }: { params: Promise<{ slu
     </div>
   );
 }
-
 

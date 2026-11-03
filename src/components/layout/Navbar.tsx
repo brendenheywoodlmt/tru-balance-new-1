@@ -16,7 +16,7 @@ export default function Navbar() {
       {/* Scrolling Yellow Announcement Banner */}
       <div className="w-full bg-[#d6ac4f] text-center font-bold overflow-hidden py-1">
         <div className="whitespace-wrap text-black text-xs tracking-wide">
-          TruBalance prices for 60min, 90min, and 120min sessions will change on 11/01/2026. 60 min = $100, 90 min = $150, and 2hr = $200. Thanks!
+          TruBalance prices for 60min, 90min, and 120min sessions are now 60 min = $100, 90 min = $150, and 2hr = $200. Thanks!
         </div>
       </div>
       
@@ -29,7 +29,7 @@ export default function Navbar() {
               alt="Tru Balance Logo"
               width={120}
               height={40}
-              style={{ height: 'auto' }}
+              style={{ width: '120px', height: 'auto' }}
               priority
             />
           </Link>

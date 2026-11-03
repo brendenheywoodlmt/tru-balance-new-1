@@ -53,7 +53,7 @@ export default function Home() {
               <div className="mb-6">
                 <p className="text-sm font-medium text-stone-500 uppercase tracking-wider">Duration & Investment</p>
                 <p className="text-lg font-semibold text-stone-900">30 - 120 min</p>
-                <p className="text-xl font-bold text-[#4e8d58]">$50 - $185</p>
+                <p className="text-xl font-bold text-[#4e8d58]">$50 - $200</p>
               </div>
             <Link 
               href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
@@ -74,7 +74,7 @@ export default function Home() {
               <div className="mb-6">
                 <p className="text-sm font-medium text-stone-500 uppercase tracking-wider">Duration & Investment</p>
                 <p className="text-lg font-semibold text-stone-900">30 - 60 min</p>
-                <p className="text-xl font-bold text-[#4e8d58]">$50 - $95</p>
+                <p className="text-xl font-bold text-[#4e8d58]">$50 - $100</p>
               </div>
             <Link 
               href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
@@ -95,7 +95,7 @@ export default function Home() {
               <div className="mb-6">
                 <p className="text-sm font-medium text-stone-500 uppercase tracking-wider">Duration & Investment</p>
                 <p className="text-lg font-semibold text-stone-900">60 min</p>
-                <p className="text-xl font-bold text-[#4e8d58]">$50 - $140</p>
+                <p className="text-xl font-bold text-[#4e8d58]">$50 - $150</p>
               </div>
             <Link 
               href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
