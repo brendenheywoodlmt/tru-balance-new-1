@@ -13,12 +13,12 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-[#2c2f62] backdrop-blur-md border-b border-white/10">
-      {/* Scrolling Yellow Announcement Banner */}
+      {/* Scrolling Yellow Announcement Banner 
       <div className="w-full bg-[#d6ac4f] text-center font-bold overflow-hidden py-1">
         <div className="whitespace-wrap text-black text-xs tracking-wide">
           TruBalance prices for 60min, 90min, and 120min sessions are now 60 min = $100, 90 min = $150, and 2hr = $200. Thanks!
         </div>
-      </div>
+      </div> */}
       
       <div className="max-w-6xl mx-auto px-6 h-32 flex justify-between items-center">
         {/* Left Side: Logo & Wordmark Grouped Together */}
