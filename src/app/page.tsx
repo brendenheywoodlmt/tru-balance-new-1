@@ -18,15 +18,24 @@ export default function Home() {
           Experience transformative healing through compassionate, trauma-informed bodywork and energy healing
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-4">
-        <Link 
-          href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm"
-        >
-          Book Now
-        </Link>
+        <div className="mt-10 flex flex-col gap-4 items-center">
+          <Link 
+            href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
+          >
+            Book Now
+          </Link>
+          
+          <p className="px-6 py-6">Looking to invest in your health?</p>
+
+          <Link 
+            href={"/services"} 
+            className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm text-center"
+          >
+            Click Here for Package Rates
+          </Link>
         </div>
       </main>
 
