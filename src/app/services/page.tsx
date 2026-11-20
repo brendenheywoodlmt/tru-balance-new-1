@@ -133,13 +133,21 @@ export default function ServicesPage() {
       {/* Booking CTA */}
       <section className="max-w-4xl mx-auto px-6 mt-24 text-center">
         <div className="bg-[#2c2f62] rounded-3xl p-12 text-white">
-          <h2 className="text-3xl font-sans mb-4">Ready to start your journey?</h2>
-          <p className="text-stone-400 mb-8">Appointments are available Monday through Saturday in Utah County.</p>
+          <h2 className="text-3xl font-sans mb-8 px-4">Ready to start your journey?</h2>
+          <p className="text-stone-400 mb-8">
+          Massage by appointment in Provo, Utah.
+          </p>
+          <p className="text-stone-400 mb-8">
+          Available Mondays, Thursdays, Friday evenings, Saturdays, and Sundays. Closed Tuesdays and Wednesdays.
+          </p>
+          <p className="text-stone-400 mb-8">
+          Book online to see available times.
+          </p>
           <Link 
             href={process.env.NEXT_PUBLIC_SQUARE || "/contact"} 
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#4e8d58] text-white px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm"
+            className="bg-[#4e8d58] text-white mt-8 px-5 py-2.5 rounded-full hover:bg-stone-900 transition-all shadow-sm"
           >
             Book An Appointment
           </Link>
