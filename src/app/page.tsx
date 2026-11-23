@@ -287,7 +287,7 @@ export default function Home() {
 
               {/* Action Button */}
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=388+W+Center+St+Orem+UT+84057"
+                href="https://maps.app.goo.gl/XZG6TJtbbx7aMi8Z7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block w-full text-center bg-[#4e8d58] text-white py-4 rounded-xl font-bold hover:bg-[#4e8d58] transition-all shadow-md shadow-[#4e8d58]"
